@@ -1940,9 +1940,9 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-wepy-async-function@^1.4.4:
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/wepy-async-function/-/wepy-async-function-1.4.6.tgz#b650c3d46ddea54404ba1e005e0b949897c69804"
+wepy-async-function@^1.4.7:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/wepy-async-function/-/wepy-async-function-1.4.7.tgz#f783164306e175d9a7c2656a33532e619c8eae16"
   dependencies:
     promise-polyfill "^6.0.2"
     regenerator-runtime "^0.10.3"
