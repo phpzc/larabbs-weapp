@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9f6e644-0f44-4224-b0ac-147c8e17b698" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.wpy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.wpy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.wepycache" beforeDir="false" afterPath="$PROJECT_DIR$/.wepycache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/topics/index.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/topics/index.wpy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +30,7 @@
           <entry key="eslintignore" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="17" />
+          <entry key="js" value="18" />
           <entry key="json" value="3" />
           <entry key="less" value="5" />
           <entry key="png" value="1" />
@@ -46,7 +47,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="17" />
+          <entry key="JavaScript" value="18" />
           <entry key="Less" value="5" />
           <entry key="PLAIN_TEXT" value="16" />
           <entry key="TypeScript" value="1" />
@@ -60,14 +61,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="406" />
-          <entry key="wpy" value="2995" />
+          <entry key="js" value="596" />
+          <entry key="wpy" value="3033" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="406" />
-          <entry key="Vue.js" value="2995" />
+          <entry key="JavaScript" value="596" />
+          <entry key="Vue.js" value="3033" />
         </counts>
       </usages-collector>
     </session>
@@ -191,8 +192,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/topics/index.wpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+            <state relative-caret-position="253">
+              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#!!top" expanded="true" />
                 <element signature="n#template#0;n#!!top" expanded="true" />
@@ -206,8 +207,19 @@
                 <element signature="n#view#1;n#navigator#0;n#repeat#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#view#1;n#view#1;n#navigator#0;n#repeat#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#view#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#script#0;n#!!top" expanded="true" />
-                <element signature="e#1676#1699#0" expanded="true" />
+                <element signature="e#1867#1890#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -268,6 +280,7 @@
         <option value="$PROJECT_DIR$/src/utils/api.js" />
         <option value="$PROJECT_DIR$/src/pages/users/edit.wpy" />
         <option value="$PROJECT_DIR$/src/app.wpy" />
+        <option value="$PROJECT_DIR$/src/utils/util.js" />
         <option value="$PROJECT_DIR$/src/pages/topics/index.wpy" />
       </list>
     </option>
@@ -403,12 +416,12 @@
       <updated>1542707967261</updated>
       <workItem from="1542707972849" duration="1633000" />
       <workItem from="1542778822025" duration="210000" />
-      <workItem from="1542779114643" duration="15947000" />
+      <workItem from="1542779114643" duration="16491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17790000" />
+    <option name="totallyTimeSpent" value="18334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="510" y="23" width="770" height="732" extended-state="0" />
@@ -775,10 +788,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/topics/index.wpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+        <state relative-caret-position="253">
+          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#!!top" expanded="true" />
             <element signature="n#template#0;n#!!top" expanded="true" />
@@ -792,8 +815,7 @@
             <element signature="n#view#1;n#navigator#0;n#repeat#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#view#1;n#view#1;n#navigator#0;n#repeat#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#view#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#script#0;n#!!top" expanded="true" />
-            <element signature="e#1676#1699#0" expanded="true" />
+            <element signature="e#1867#1890#0" expanded="true" />
           </folding>
         </state>
       </provider>
