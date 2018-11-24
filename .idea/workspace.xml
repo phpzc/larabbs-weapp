@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9f6e644-0f44-4224-b0ac-147c8e17b698" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/topics/index.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/topics/index.wpy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.wpy" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.wpy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,13 +61,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="597" />
-          <entry key="wpy" value="3537" />
+          <entry key="wpy" value="3559" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="597" />
-          <entry key="Vue.js" value="3537" />
+          <entry key="Vue.js" value="3559" />
         </counts>
       </usages-collector>
     </session>
@@ -156,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.wpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+            <state relative-caret-position="312">
+              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#!!top" expanded="true" />
                 <element signature="e#517#540#0" expanded="true" />
@@ -169,13 +169,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/topics/index.wpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="89" column="42" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="42" />
+            <state relative-caret-position="142">
+              <caret line="101" column="26" lean-forward="true" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#!!top" expanded="true" />
+                <element signature="n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#view#1;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#view#0;n#view#1;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#view#0;n#view#0;n#view#1;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#repeat#0;n#view#0;n#view#1;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#view#0;n#repeat#0;n#view#0;n#view#1;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#repeat#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
@@ -241,6 +246,8 @@
       <find>eslint</find>
       <find>tapCaptchaCode</find>
       <find>captchaModalHidden</find>
+      <find>category-list__item-bd_show</find>
+      <find>currentCategoryId</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -260,9 +267,9 @@
         <option value="$PROJECT_DIR$/src/pages/users/me.wpy" />
         <option value="$PROJECT_DIR$/src/utils/api.js" />
         <option value="$PROJECT_DIR$/src/pages/users/edit.wpy" />
-        <option value="$PROJECT_DIR$/src/app.wpy" />
         <option value="$PROJECT_DIR$/src/utils/util.js" />
         <option value="$PROJECT_DIR$/src/pages/topics/index.wpy" />
+        <option value="$PROJECT_DIR$/src/app.wpy" />
       </list>
     </option>
   </component>
@@ -281,10 +288,10 @@
     </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1.0" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="394" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="424" />
     <option name="y" value="23" />
-    <option name="width" value="886" />
+    <option name="width" value="856" />
     <option name="height" value="732" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -398,18 +405,18 @@
       <workItem from="1542707972849" duration="1633000" />
       <workItem from="1542778822025" duration="210000" />
       <workItem from="1542779114643" duration="17717000" />
-      <workItem from="1543040971031" duration="933000" />
+      <workItem from="1543040971031" duration="1398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20493000" />
+    <option name="totallyTimeSpent" value="20958000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="733" extended-state="6" />
+    <frame x="424" y="23" width="856" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336026" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27886978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -506,6 +513,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <folding>
+            <element signature="n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -648,17 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.wpy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#!!top" expanded="true" />
-            <element signature="e#517#540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -711,15 +710,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/topics/index.wpy">
+    <entry file="file://$PROJECT_DIR$/src/app.wpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="89" column="42" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="42" />
+        <state relative-caret-position="312">
+          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#!!top" expanded="true" />
+            <element signature="e#517#540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/topics/index.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="101" column="26" lean-forward="true" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#!!top" expanded="true" />
+            <element signature="n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#view#1;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#view#0;n#view#1;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#view#0;n#view#0;n#view#1;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#repeat#0;n#view#0;n#view#1;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#view#0;n#repeat#0;n#view#0;n#view#1;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#repeat#0;n#view#0;n#view#0;n#view#0;n#view#0;n#template#0;n#!!top" expanded="true" />
