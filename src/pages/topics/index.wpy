@@ -136,20 +136,19 @@
   import util from '@/utils/util'
 
   export default class TopicIndex extends wepy.page {
-
     config = {
-      //支持下拉刷新 设置了 enablePullDownRefresh 为 true 后，用户下拉后便会触发 onPullDownRefresh 方法，下面来定义这个方法：
+      // 支持下拉刷新 设置了 enablePullDownRefresh 为 true 后，用户下拉后便会触发 onPullDownRefresh 方法，下面来定义这个方法：
       enablePullDownRefresh: true
     }
 
     // 可用于页面模板绑定的数据
     data = {
       topics: [],
-      page:1,
-      noMoreData:false,
-      categories:[],
-      categoryOpen:false,
-      currentCategory:{}
+      page: 1,
+      noMoreData: false,
+      categories: [],
+      categoryOpen: false,
+      currentCategory: {}
     }
 
     computed = {
@@ -180,10 +179,9 @@
 
       this.categories = categories
       this.$apply()
-
     }
 
-    //获取话题数据
+    // 获取话题数据
     async getTopics(page = 1, reset = false) {
       try {
         // 请求话题列表接口
@@ -191,25 +189,23 @@
           url: 'topics',
           data: {
             page: page,
-            //选举中的分类id
-            category_id:this.currentCategoryId,
+            // 选举中的分类id
+            category_id: this.currentCategoryId,
             include: 'user,category'
           }
         })
         let topics = topicsResponse.data.data
-        topics.forEach(function(topic){
+        topics.forEach(function(topic) {
           topic.updated_at_diff = util.diffForHumans(topic.updated_at)
         })
 
-
-        //如果传入的参数 reset为true 则覆盖topics
+        // 如果传入的参数 reset为true 则覆盖topics
         this.topics = reset ? topics : this.topics.concat(topics)
-
 
         let pagination = topicsResponse.data.meta.pagination
 
-        //根据分页设置 是否还有更多数据
-        if( pagination.current_page === pagination.total_pages) {
+        // 根据分页设置 是否还有更多数据
+        if (pagination.current_page === pagination.total_pages) {
           this.noMoreData = true
         }
 
@@ -228,15 +224,14 @@
     }
 
     async onPullDownRefresh() {
-
-      //下拉刷新其实是重置话题数据，所以调用时使用 this.getTopics(1, true)
+    // 下拉刷新其实是重置话题数据，所以调用时使用 this.getTopics(1, true)
       this.page = 1
       await this.getTopics(1, true)
       wepy.stopPullDownRefresh()
     }
 
-    //到底部 上拉 加载更多数据 触发
-    async  onReachBottom() {
+    // 到底部 上拉 加载更多数据 触发
+    async onReachBottom() {
       if (this.noMoreData) {
         return
       }
@@ -246,20 +241,18 @@
       this.$apply()
     }
 
-
     methods = {
       toggle() {
         this.categoryOpen = !this.categoryOpen
       },
 
       async changeCategory (id = 0) {
-        //找到选中的分类
+        // 找到选中的分类
         this.currentCategory = id ? this.categories.find(category => category.id === id) : {}
-        //点击以后关闭下拉列表
+        // 点击以后关闭下拉列表
         this.categoryOpen = false
         this.$apply()
-        await this.getTopics(1,true)
-
+        await this.getTopics(1, true)
       }
 
     }

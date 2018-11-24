@@ -52,46 +52,41 @@
     import util from '@/utils/util'
 
     export default class TopicShow extends wepy.page {
-
-      config = {
-        navigationBarTitleText:'话题详情'
+  config = {
+        navigationBarTitleText: '话题详情'
       }
 
       data = {
-        topic:null
+        topic: null
       }
 
-        async getTopic(id) {
-          try {
-            let topicResponse = await api.request({
-              url: 'topics/' + id,
-              data: {
-                include: 'user,category'
-              }
-            })
-            let topic = topicResponse.data
+      async getTopic(id) {
+        try {
+          let topicResponse = await api.request({
+            url: 'topics/' + id,
+            data: {
+              include: 'user,category'
+            }
+          })
+          let topic = topicResponse.data
 
             // 格式化 updated_at
-            topic.updated_at_diff = util.diffForHumans(topic.updated_at)
+          topic.updated_at_diff = util.diffForHumans(topic.updated_at)
 
-            this.topic = topic
-            this.$apply()
-          } catch (err) {
-            console.log(err)
-            wepy.showModal({
-              title: '提示',
-              content: '服务器错误，请联系管理员'
-            })
-          }
+          this.topic = topic
+          this.$apply()
+        } catch (err) {
+          console.log(err)
+          wepy.showModal({
+            title: '提示',
+            content: '服务器错误，请联系管理员'
+          })
         }
+      }
 
-        onLoad(options) {
-            this.getTopic(options.id)
-
-        }
-
-
-    }
-
+      onLoad(options) {
+        this.getTopic(options.id)
+      }
+}
 
 </script>

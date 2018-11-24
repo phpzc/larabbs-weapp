@@ -78,33 +78,31 @@
       navigationBarTitleText: '我的'
     }
     data = {
-        user:null
+      user: null
     }
 
     async onShow() {
-
-        this.user = await this.$parent.getCurrentUser()
-        this.$apply()
+      this.user = await this.$parent.getCurrentUser()
+      this.$apply()
     }
 
     methods = {
-      //退出
-      async logout(e){
-        try{
+      // 退出
+      async logout(e) {
+        try {
           let logoutResponse = await api.logout()
 
-          if(logoutResponse.statusCode == 204){
+          if (logoutResponse.statusCode === 204) {
             this.user = null
             this.$apply()
           }
-        }catch(err){
+        } catch (err) {
           console.log(err)
           wepy.showModal({
-            title:'提示',
-            content:'服务器错误'
+            title: '提示',
+            content: '服务器错误'
           })
         }
-
       }
 
     }

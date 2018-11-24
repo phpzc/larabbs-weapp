@@ -132,7 +132,7 @@
       this.errors = {}
       if (!this.verificationCode.key) {
         wepy.showToast({
-          title:'请发送验证码',
+          title: '请发送验证码',
           icon: 'none',
           duration: 2000
         })
@@ -151,12 +151,12 @@
         return false
       }
 
-      try{
+      try {
         let formData = e.detail.value
         formData.verification_key = this.verificationCode.key
 
         let loginData = await wepy.login()
-        //参数中增加code 用户获取openid 绑定当前用户
+        // 参数中增加code 用户获取openid 绑定当前用户
         formData.code = loginData.code
 
         let registerResponse = await api.request({
@@ -177,7 +177,6 @@
           this.$apply()
         }
 
-
         // 注册成功，记录token
         if (registerResponse.statusCode === 201) {
           wepy.setStorageSync('access_token', registerResponse.data.meta.access_token)
@@ -192,23 +191,19 @@
 
           // 跳转到我的页面
           setTimeout(function() {
-            //跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面。
+            // 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面。
             wepy.switchTab({
               url: '/pages/users/me'
             })
           }, 2000)
         }
-
-
-      }catch (err) {
+      } catch (err) {
         console.log(err)
         wepy.showModal({
           title: '提示',
           content: '服务器错误，请联系管理员'
         })
-
       }
-
     }
 
     // 获取图片验证码

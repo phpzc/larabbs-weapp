@@ -148,14 +148,14 @@ const logout = async (params = {}) => {
 }
 
 const updateFile = async (options = {}) => {
-  wepy.showLoading({title:'上传中'})
+  wepy.showLoading({title: '上传中'})
 
   let accessToken = await getToken()
 
   options.url = host + '/' + options.url
   let header = options.header || {}
 
-  header.Authorization = 'Bearer '+accessToken
+  header.Authorization = 'Bearer ' + accessToken
   options.header = header
 
   let response = await wepy.uploadFile(options)
@@ -163,11 +163,9 @@ const updateFile = async (options = {}) => {
   wepy.hideLoading()
 
   return response
-
 }
 
-
-//只需要 import api from '@/utils/api' 引入 api.js 文件后，就可以通过 api.request 和 api.login 来调用方法了。
+// 只需要 import api from '@/utils/api' 引入 api.js 文件后，就可以通过 api.request 和 api.login 来调用方法了。
 export default {
   request,
   authRequest,

@@ -38,9 +38,6 @@ import wepy from 'wepy'
 import 'wepy-async-function'
 import api from '@/utils/api'
 
-
-
-
 export default class extends wepy.app {
   config = {
     pages: [
@@ -82,27 +79,25 @@ export default class extends wepy.app {
 
   onLaunch() {}
 
-
   async getCurrentUser() {
-
-    if (! this.checkLogin()) {
+    if (!this.checkLogin()) {
       return null
     }
 
-    //从缓存中获取用户信息
+    // 从缓存中获取用户信息
     let user = wepy.getStorageSync('user')
 
-    try{
+    try {
       if (!user) {
         let userResponse = await api.authRequest('user')
 
-        //状态码为200表示 请求成功
-        if( userResponse.statusCode === 200){
+        // 状态码为200表示 请求成功
+        if (userResponse.statusCode === 200) {
           user = userResponse.data
-          wepy.setStorageSync('user',user)
+          wepy.setStorageSync('user', user)
         }
       }
-    }catch (err) {
+    } catch (err) {
       console.log(err)
       wepy.showModal({
         title: '提示',
@@ -116,6 +111,5 @@ export default class extends wepy.app {
   checkLogin() {
     return (wepy.getStorageSync('access_token') !== '')
   }
-
 }
 </script>
